@@ -3,171 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <title>Predicción Estabilidad Laboral</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Predicción de Estabilidad Laboral</h2>
+<div class="container">
 
-<form id="form">
+    <h1>Predicción de Estabilidad Laboral</h1>
 
-    <label>Programa:</label>
-    <select id="Programa">
-        <option>Derecho</option>
-        <option>Contaduria Publica</option>
-        <option>Ingenieria Civil</option>
-        <option>Ciencias Economicas</option>
-        <option>Medicina</option>
-        <option>Psicologia</option>
-        <option>Odontologia</option>
-        <option>Enfermeria</option>
-        <option>Ingenieria de Sistemas</option>
-        <option>Medicina Veterinaria y Zootecnia</option>
-        <option>Especializacion</option>
-        <option>Tecnico Auxiliar en Enfermeria</option>
-    </select>
+    <form id="form" class="formulario">
 
-    <br>
+        <div class="grid">
 
-    <label>Genero:</label>
-    <select id="Genero">
-        <option>M</option>
-        <option>F</option>
-    </select>
+            <div class="campo">
+                <label>Programa:</label>
+                <select id="Programa">
+                    <option>Derecho</option>
+                    <option>Contaduria Publica</option>
+                    <option>Ingenieria Civil</option>
+                    <option>Ciencias Economicas</option>
+                    <option>Medicina</option>
+                    <option>Psicologia</option>
+                    <option>Odontologia</option>
+                    <option>Enfermeria</option>
+                    <option>Ingenieria de Sistemas</option>
+                    <option>Medicina Veterinaria y Zootecnia</option>
+                    <option>Especializacion</option>
+                    <option>Tecnico Auxiliar en Enfermeria</option>
+                </select>
+            </div>
 
-    <br>
+            <div class="campo">
+                <label>Genero:</label>
+                <select id="Genero">
+                    <option>M</option>
+                    <option>F</option>
+                </select>
+            </div>
 
-    <label>Edad:</label>
-    <select id="Edad">
-        <option value="1">21 - 25</option>
-        <option value="2">26 - 30</option>
-        <option value="3">31 - 35</option>
-        <option value="4">36 - 40</option>
-        <option value="5">41 - 45</option>
-        <option value="6">46 - 50</option>
-        <option value="7">51 - 55</option>
-        <option value="8">56 - 60</option>
-        <option value="9">61 - 69</option>
-    </select>
+            <div class="campo">
+                <label>Edad:</label>
+                <select id="Edad">
+                    <option value="1">21 - 25</option>
+                    <option value="2">26 - 30</option>
+                    <option value="3">31 - 35</option>
+                    <option value="4">36 - 40</option>
+                    <option value="5">41 - 45</option>
+                    <option value="6">46 - 50</option>
+                    <option value="7">51 - 55</option>
+                    <option value="8">56 - 60</option>
+                    <option value="9">61 - 69</option>
+                </select>
+            </div>
 
-    <br>
+            <div class="campo">
+                <label>Estrato:</label>
+                <select id="Estrato">
+                    <option>Uno</option>
+                    <option>Dos</option>
+                    <option>Tres</option>
+                    <option>Cuatro</option>
+                    <option>Cinco</option>
+                    <option>Seis</option>
+                </select>
+            </div>
 
-    <label>Estrato:</label>
-    <select id="Estrato">
-        <option>Uno</option>
-        <option>Dos</option>
-        <option>Tres</option>
-        <option>Cuatro</option>
-        <option>Cinco</option>
-        <option>Seis</option>
-    </select>
+            <div class="campo">
+                <label>Estado civil:</label>
+                <select id="EstadoCivil">
+                    <option>Casado</option>
+                    <option>Union libre</option>
+                    <option>Soltero</option>
+                    <option>Separado</option>
+                    <option>Viudo</option>
+                </select>
+            </div>
 
-    <br>
+            <div class="campo">
+                <label>Número hijos:</label>
+                <select id="Hijos">
+                    <option>Cero</option>
+                    <option>Uno</option>
+                    <option>Dos</option>
+                    <option>Tres</option>
+                    <option>Cuatro</option>
+                    <option>Cinco</option>
+                </select>
+            </div>
 
-    <label>Estado civil:</label>
-    <select id="EstadoCivil">
-        <option>Casado</option>
-        <option>Union libre</option>
-        <option>Soltero</option>
-        <option>Separado</option>
-        <option>Viudo</option>
-    </select>
+            <div class="campo">
+                <label>Nivel formación:</label>
+                <select id="Formacion">
+                    <option>Profesional</option>
+                    <option>Especialista</option>
+                    <option>Magister</option>
+                    <option>Doctorado</option>
+                    <option>Tecnico Profesional</option>
+                </select>
+            </div>
 
-    <br>
+            <div class="campo">
+                <label>Emprendimiento:</label>
+                <select id="Emprendimiento">
+                    <option>Si</option>
+                    <option>No</option>
+                </select>
+            </div>
 
-    <label>Numero hijos:</label>
-    <select id="Hijos">
-        <option>Cero</option>
-        <option>Uno</option>
-        <option>Dos</option>
-        <option>Tres</option>
-        <option>Cuatro</option>
-        <option>Cinco</option>
-    </select>
+            <div class="campo">
+                <label>Tipo organización:</label>
+                <select id="TipoOrg">
+                    <option>Privada</option>
+                    <option>Publica</option>
+                    <option>Solidaria</option>
+                    <option>Trabaja Independiente</option>
+                </select>
+            </div>
 
-    <br>
+            <div class="campo">
+                <label>Área:</label>
+                <select id="Area">
+                    <option>Servicios</option>
+                    <option>Administrativa</option>
+                    <option>Salud</option>
+                    <option>Financiera</option>
+                    <option>Industrial</option>
+                    <option>Economica</option>
+                    <option>Gestion Humana</option>
+                    <option>Educacion</option>
+                    <option>Comercial</option>
+                    <option>Contable</option>
+                    <option>Sistemas</option>
+                </select>
+            </div>
 
-    <label>Nivel formación:</label>
-    <select id="Formacion">
-        <option>Profesional</option>
-        <option>Especialista</option>
-        <option>Magister</option>
-        <option>Doctorado</option>
-        <option>Tecnico Profesional</option>
-    </select>
+            <div class="campo">
+                <label>Tamaño organización:</label>
+                <select id="Tamano">
+                    <option>10 o menos empleados</option>
+                    <option>11 y 50 empleados</option>
+                    <option>51 y 200 empleados</option>
+                    <option>Mas de 200 empleados</option>
+                </select>
+            </div>
 
-    <br>
+            <div class="campo">
+                <label>Sector:</label>
+                <select id="Sector">
+                    <option>Servicios</option>
+                    <option>Comercial</option>
+                    <option>Industrial</option>
+                </select>
+            </div>
 
-    <label>Emprendimiento:</label>
-    <select id="Emprendimiento">
-        <option>Si</option>
-        <option>No</option>
-    </select>
+            <div class="campo">
+                <label>Ingreso:</label>
+                <select id="Ingreso">
+                    <option>1 SML o menos</option>
+                    <option>2-3 SML</option>
+                    <option>3-5 SML</option>
+                    <option>5 SML o mas</option>
+                </select>
+            </div>
 
-    <br>
+        </div>
 
-    <label>Tipo organización:</label>
-    <select id="TipoOrg">
-        <option>Privada</option>
-        <option>Publica</option>
-        <option>Solidaria</option>
-        <option>Trabaja Independiente</option>
-    </select>
+        <button type="submit" class="btn">Predecir</button>
 
-    <br>
+    </form>
 
-    <label>Área:</label>
-    <select id="Area">
-        <option>Servicios</option>
-        <option>Administrativa</option>
-        <option>Salud</option>
-        <option>Financiera</option>
-        <option>Industrial</option>
-        <option>Economica</option>
-        <option>Gestion Humana</option>
-        <option>Educacion</option>
-        <option>Comercial</option>
-        <option>Contable</option>
-        <option>Sistemas</option>
-    </select>
+    <h3 id="resultado"></h3>
 
-    <br>
-
-    <label>Tamaño organización:</label>
-    <select id="Tamano">
-        <option>10 o menos empleados</option>
-        <option>11 y 50 empleados</option>
-        <option>51 y 200 empleados</option>
-        <option>Mas de 200 empleados</option>
-    </select>
-
-    <br>
-
-    <label>Sector:</label>
-    <select id="Sector">
-        <option>Servicios</option>
-        <option>Comercial</option>
-        <option>Industrial</option>
-    </select>
-
-    <br>
-
-    <label>Ingreso:</label>
-    <select id="Ingreso">
-        <option>1 SML o menos</option>
-        <option>2-3 SML</option>
-        <option>3-5 SML</option>
-        <option>5 SML o mas</option>
-    </select>
-
-    <br><br>
-
-    <button type="submit">Predecir</button>
-
-</form>
-
-<h3 id="resultado"></h3>
+</div>
 
 <script src="app.js"></script>
-    
+
 </body>
 </html>
