@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicción Estabilidad Laboral</title>
+</head>
+<body>
+
+<h2>Predicción de Estabilidad Laboral</h2>
+
+<form id="form">
+
+    <label>Programa:</label>
+    <select id="Programa">
+        <option>Derecho</option>
+        <option>Contaduria Publica</option>
+        <option>Ingenieria Civil</option>
+        <option>Ciencias Economicas</option>
+        <option>Medicina</option>
+        <option>Psicologia</option>
+        <option>Odontologia</option>
+        <option>Enfermeria</option>
+        <option>Ingenieria de Sistemas</option>
+        <option>Medicina Veterinaria y Zootecnia</option>
+        <option>Especializacion</option>
+        <option>Tecnico Auxiliar en Enfermeria</option>
+    </select>
+
+    <br>
+
+    <label>Genero:</label>
+    <select id="Genero">
+        <option>M</option>
+        <option>F</option>
+    </select>
+
+    <br>
+
+    <label>Edad:</label>
+    <select id="Edad">
+        <option value="1">21 - 25</option>
+        <option value="2">26 - 30</option>
+        <option value="3">31 - 35</option>
+        <option value="4">36 - 40</option>
+        <option value="5">41 - 45</option>
+        <option value="6">46 - 50</option>
+        <option value="7">51 - 55</option>
+        <option value="8">56 - 60</option>
+        <option value="9">61 - 69</option>
+    </select>
+
+    <br>
+
+    <label>Estrato:</label>
+    <select id="Estrato">
+        <option>Uno</option>
+        <option>Dos</option>
+        <option>Tres</option>
+        <option>Cuatro</option>
+        <option>Cinco</option>
+        <option>Seis</option>
+    </select>
+
+    <br>
+
+    <label>Estado civil:</label>
+    <select id="EstadoCivil">
+        <option>Casado</option>
+        <option>Union libre</option>
+        <option>Soltero</option>
+        <option>Separado</option>
+        <option>Viudo</option>
+    </select>
+
+    <br>
+
+    <label>Numero hijos:</label>
+    <select id="Hijos">
+        <option>Cero</option>
+        <option>Uno</option>
+        <option>Dos</option>
+        <option>Tres</option>
+        <option>Cuatro</option>
+        <option>Cinco</option>
+    </select>
+
+    <br>
+
+    <label>Nivel formación:</label>
+    <select id="Formacion">
+        <option>Profesional</option>
+        <option>Especialista</option>
+        <option>Magister</option>
+        <option>Doctorado</option>
+        <option>Tecnico Profesional</option>
+    </select>
+
+    <br>
+
+    <label>Emprendimiento:</label>
+    <select id="Emprendimiento">
+        <option>Si</option>
+        <option>No</option>
+    </select>
+
+    <br>
+
+    <label>Tipo organización:</label>
+    <select id="TipoOrg">
+        <option>Privada</option>
+        <option>Publica</option>
+        <option>Solidaria</option>
+        <option>Trabaja Independiente</option>
+    </select>
+
+    <br>
+
+    <label>Área:</label>
+    <select id="Area">
+        <option>Servicios</option>
+        <option>Administrativa</option>
+        <option>Salud</option>
+        <option>Financiera</option>
+        <option>Industrial</option>
+        <option>Economica</option>
+        <option>Gestion Humana</option>
+        <option>Educacion</option>
+        <option>Comercial</option>
+        <option>Contable</option>
+        <option>Sistemas</option>
+    </select>
+
+    <br>
+
+    <label>Tamaño organización:</label>
+    <select id="Tamano">
+        <option>10 o menos empleados</option>
+        <option>11 y 50 empleados</option>
+        <option>51 y 200 empleados</option>
+        <option>Mas de 200 empleados</option>
+    </select>
+
+    <br>
+
+    <label>Sector:</label>
+    <select id="Sector">
+        <option>Servicios</option>
+        <option>Comercial</option>
+        <option>Industrial</option>
+    </select>
+
+    <br>
+
+    <label>Ingreso:</label>
+    <select id="Ingreso">
+        <option>1 SML o menos</option>
+        <option>2-3 SML</option>
+        <option>3-5 SML</option>
+        <option>5 SML o mas</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Predecir</button>
+
+</form>
+
+<h3 id="resultado"></h3>
+
+<script src="app.js"></script>
+    
+</body>
+</html>
