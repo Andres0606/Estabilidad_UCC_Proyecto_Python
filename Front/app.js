@@ -20,7 +20,7 @@ document.getElementById("form").addEventListener("submit", async function(e) {
     console.log("DATOS ENVIADOS:", data);
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/predict", {
+        const response = await fetch("https://estabilidaduccproyectopython-production.up.railway.app/predict", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
